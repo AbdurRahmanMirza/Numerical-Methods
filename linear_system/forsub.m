@@ -11,7 +11,7 @@ Output:
 if m~=n, error("The input matrix A isn't a square matrix"), end
 
 n = length(b);
-Y = zeroes(n,1);
+Y = zeros(n,1);
 Y(1) = b(1)/A(1,1);
 
 for i = 2:1:n
