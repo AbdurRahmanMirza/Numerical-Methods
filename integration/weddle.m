@@ -21,7 +21,7 @@ h = (b-a)/n;
 for i = 1:1:n-1
     x(i) =  a + i*h;
     y(i) = func(x(i));
-    if mod(i, 6) == 1 || mod(i, 6) == 5
+    if mod(i,6) == 1 || mod(i,6) == 5
         sum_1_5 = sum_1_5 + y(i);
     elseif mod(i,6) == 0
         sum_6 = sum_6 + y(i);
