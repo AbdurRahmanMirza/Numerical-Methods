@@ -12,10 +12,10 @@ Output:
  n = length(x);
  if length(y) ~= n, error("x and y must be of same length"), end
  yint = 0;
- for i=1:n
+ for i = 1:n
      product = y(i);
      for j = 1:n
-        if i~=j
+        if i ~= j
             product = product*(xint-x(j))/(x(i)-x(j));
         end
      end
