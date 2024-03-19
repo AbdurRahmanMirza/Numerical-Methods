@@ -29,3 +29,4 @@ for i=1:n
     vt(i+1) = t;
     vy(i+1) = y;
 end
+end
