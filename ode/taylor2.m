@@ -3,11 +3,11 @@ function [vt,vy] = taylor2(func,dfunc1,a,b,n,y_initial)
 Taylor's (Order Two) Method
 Input:
     func = function f(t,y)
-    dfunc1 = first derevative of f(t,y) 
+    dfunc1 = first derivative of f(t,y) 
     a = initial point
     b = final point
     n = number of intervals  
-    y_intial = initial value of dependent variable
+    y_intial = initial value of the dependent variable
      
 Output:
     vt = values of t
