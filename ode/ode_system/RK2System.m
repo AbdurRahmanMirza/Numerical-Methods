@@ -29,7 +29,7 @@ Methods:
 
  for i = 1:1:n
      for j = 1:m, k1(j) = func{j}(t, y); end
-     for j = 1:m, k2 = func{j}(t+p1*h, y+q11*k1*h); end
+     for j = 1:m, k2(j) = func{j}(t+p1*h, y+q11*k1*h); end
     
      t = a+i*h;
      phi = w1*k1+w2*k2;

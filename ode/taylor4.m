@@ -3,13 +3,13 @@ function [vt,vy] = taylor4(func,dfunc1,dfunc2,dfunc3,a,b,n,y_initial)
 Taylor's (Order Four) Method
 Input:
     func = function f(t,y)
-    dfunc1 = first derevative of f(t,y)
-    dfunc2 = second derevative of f(t,y)
-    dfunc3 = third derevative of f(t,y)
+    dfunc1 = first derivative of f(t,y)
+    dfunc2 = second derivative of f(t,y)
+    dfunc3 = third derivative of f(t,y)
     a = initial point
     b = final point
     n = number of intervals  
-    y_intial = initial value of dependent variable
+    y_intial = initial value of the dependent variable
      
 Output:
     vt = values of t
@@ -35,4 +35,5 @@ for i = 1:1:n
     fprintf('i: %.3d\t\t t:%.4f\t\t y:%.4f\n', i, t, y)
     vt(i+1) = t;
     vy(i+1) = y;
+end
 end
