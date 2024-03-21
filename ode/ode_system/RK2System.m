@@ -1,14 +1,14 @@
 function [vt,vy] = RK2System(func,a,b,n,y_initial)
 %{
-Runge Kutta (RK2) Method
-Input:
+Runge Kutta's (RK2) Method
+Inputs:
     func = the ODE to be solve
     a = initial point
     b = final point
     n = number of intervals  
     y_intial = initial value of dependent variable
      
-Output:
+Outputs:
     vt = values of t
     vy = values of y (solution of Initial Value Problem)
 

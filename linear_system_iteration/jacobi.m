@@ -12,13 +12,14 @@ Output:
       to the solution of AX = b 
 %}
 
-n = length(b);
-for  i = 1:max_itr
-    for j = 1:n
-        X(j) = (b(j)-A(j,[1:j-1,j+1:n])*P([1:j-1,j+1:n]))/A(j,j);
-    end
-    err = abs(norm(X'-P));
-    rel_err = err/(norm(X)+eps);
-    P = X';
-    if (err < tol) || (rel_err < tol), break, end
+ n = length(b);
+ for  i = 1:max_itr
+     for j = 1:n
+         X(j) = (b(j)-A(j,[1:j-1,j+1:n])*P([1:j-1,j+1:n]))/A(j,j);
+     end
+     err = abs(norm(X'-P));
+     rel_err = err/(norm(X)+eps);
+     P = X';
+     if (err < tol) || (rel_err < tol), break, end
+ end
 end
