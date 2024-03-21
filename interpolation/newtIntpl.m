@@ -1,7 +1,7 @@
 function yint = newtIntpl(x,y,xint)
 %{
 Newton's Interpolating Polynomial
-Input: 
+Inputs: 
     x = [x0 x1 ... xn]
     y = [y0 y1 ... yn]
     xint = value at which interpolation is calculated 
@@ -22,7 +22,7 @@ Output:
  
  xt = 1; yint = DD(1,1);
  for i=1:n-1
-	 xt = xt*(xint-x(i));
-	 yint = yint+DD(i+1,i+1)*xt;
+     xt = xt*(xint-x(i));
+     yint = yint+DD(i+1,i+1)*xt;
  end
 end
