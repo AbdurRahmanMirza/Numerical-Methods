@@ -15,8 +15,9 @@ Outputs:
 Methods:
     Mid point method: w1=0; w2=1; p1=1/2; q11=1/2;  
     Ralston's method: w1=1/3; w2=2/3; p1=3/4; q11=3/4;
+    Heun's method: w1 = 1/2; w2 = 1/2; p1 = 1; q11 = 1;
 %}
-%Heun's method:
+
  w1 = 1/2; w2 = 1/2; p1 = 1; q11 = 1;
 
  vt = zeros(1,n+1); vy = zeros(1,n+1);
