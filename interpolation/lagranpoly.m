@@ -1,6 +1,6 @@
 function [C,L] = lagranpoly(x,y)
 %{
-Newton's Interpolating Polynomial
+Langrange's Interpolating Polynomial
 Input: 
     x = [x0 x1 ... xn]
     y = [y0 y1 ... yn]

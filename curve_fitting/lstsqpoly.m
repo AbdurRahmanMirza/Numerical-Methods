@@ -8,6 +8,7 @@ Input:
 Output:
     C = coefficient matrix for the polynomial  
 %}
+
  m = length(x);
  if length(y) ~= m; error('x and y should be of same length'); end
  

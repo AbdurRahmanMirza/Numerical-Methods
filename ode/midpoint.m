@@ -6,7 +6,7 @@ Inputs:
     a = initial point
     b = final point
     n = number of intervals
-    y_intial = initial value of dependent variable
+    y_intial = initial value of the dependent variable
 
 Outputs:
     vt = values of t
