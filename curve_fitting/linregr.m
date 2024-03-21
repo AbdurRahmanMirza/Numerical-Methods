@@ -1,7 +1,6 @@
 function [b,a,r2] = linregr(x,y)
 %{ 
 Linear Regression Curve Fitting
-
 Input:
     x = independent variable
     y = dependent variable
