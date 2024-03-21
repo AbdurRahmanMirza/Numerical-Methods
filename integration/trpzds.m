@@ -10,8 +10,14 @@ Output:
     I = result of integration
 %} 
 
+<<<<<<< HEAD
  if nargin < 4, error('insufficient inputs'); end
  if a > b, error('b must be greater than a'); end
+=======
+ if nargin < 3, error('insufficient inputs'); end
+ if a > b, error('b must be greater than a'); end
+ if nargin < 4, n = 100; end
+>>>>>>> 9bba05dad84621a06ca2640af9047b478dab6074
  if mod(n,2) == 1, error('n must be even'); end
 
  x = zeros(1,n-1); y = zeros(1,n-1);
