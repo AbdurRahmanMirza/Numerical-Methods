@@ -7,36 +7,39 @@ Numerical Methods implementation via MATLAB.
 - Least Square Polynomials 
 
 ### Numerical integration
-
-- Composite Bool's method
-- Composite Simpson's 1/3 method
-- Composite Simpson's 3/8 method
+- Composite Boole method
+- Composite Simpson 1/3 method
+- Composite Simpson 3/8 method
 - Unequally Spaced Trapezoidal Rule Quadrature
 - Composite Trapezoidal method
-- Composite Weddle's rule
+- Composite Weddle rule
 
 ### Interpolation
-
-- Lagrange's method
-- Newton's method
+- Lagrange method
+- Newton method
 
 ### Linear System of Equations
-
-- Backward Substitution
-- Forward Substitution
-- Cholesky's method
+- Backward substitution
+- Forward substitution
+- Cholesky method
 - Crout method
 - Gauss Elimination
 - Gauss-Jorden method 
-- Gauss-Seidel method
-- Jacobi's method
+- Gauss-Seidel iteration method
+- Jacobi method
 
 ### Ordinary Differential Equations (Initial Value Problem)
-
-- Runge-Kutta's (Order Two) method
-- Runge-Kutta's (Order Three) method
-- Runge-Kutta's (Order Four) method
-- Euler's method
+- Runge-Kutta (Order Two) method
+- Runge-Kutta (Order Three) method
+- Runge-Kutta (Order Four) method
+- Euler method
 - Midpoint method
-- Taylor's (Order Two) method
-- Taylor's (Order Four) method
+- Taylor (Order Two) method
+- Taylor (Order Four) method
+
+### Solution of Nonlinear Equations f(x)=0
+- Fixed-Point iteration
+- Bisection method
+- False-Position method
+- Newton-Raphson iteration
+- Secant Method
