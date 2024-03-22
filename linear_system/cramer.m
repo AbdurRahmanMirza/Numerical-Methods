@@ -9,7 +9,7 @@ Output:
 %}
 
  n = length(b);
- x =zeros(n,1);
+ x = zeros(n,1);
  Aold = A; d = det(A);
  if d ~= 0
      for i = 1:n
