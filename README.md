@@ -24,6 +24,10 @@ Numerical Methods implementation via MATLAB.
 
 - Backward Substitution
 - Forward Substitution
+- Cholesky's method
+- Crout method
+- Gauss Elimination
+- Gauss-Jorden method 
 
 ### Linear Systems iterations
 
