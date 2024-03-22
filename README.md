@@ -20,17 +20,18 @@ Numerical Methods implementation via MATLAB.
 - Lagrange's method
 - Newton's method
 
-### Methods for Linear Systems
+### Linear System of Equations
 
 - Backward Substitution
 - Forward Substitution
-
-### Linear Systems iterations
-
+- Cholesky's method
+- Crout method
+- Gauss Elimination
+- Gauss-Jorden method 
 - Gauss-Seidel method
 - Jacobi's method
 
-### Initial-value problems for ordinary differential equations
+### Ordinary Differential Equations (Initial Value Problem)
 
 - Runge-Kutta's (Order Two) method
 - Runge-Kutta's (Order Three) method
@@ -39,9 +40,3 @@ Numerical Methods implementation via MATLAB.
 - Midpoint method
 - Taylor's (Order Two) method
 - Taylor's (Order Four) method
-
-### Systems of differential equations
-
-- Runge-Kutta's (Order Two) method
-- Runge-Kutta's (Order Three) method
-- Runge-Kutta's (Order Four) method
