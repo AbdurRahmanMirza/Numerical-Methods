@@ -11,18 +11,18 @@ Outputs:
 
  n = length(b);
  x = zeros(n,1);
- Aug = [A b];
+ Ab = [A,b];
 
  for j = 1:n+1
      for i = j+1:n
-         m = Aug(i,j)/Aug(j,j);
-         Aug(i,:) = Aug(i,:) - m*Aug(j,:);
+         m = Ab(i,j)/Ab(j,j);
+         Ab(i,:) = Ab(i,:) - m*Ab(j,:);
      end
  end
  
- x(n) = Aug(n,n+1)/Aug(n,n);
+ x(n) = Ab(n,n+1)/Ab(n,n);
  for k = n-1:-1:1
-     x(k) = Aug(k,n+1)- Aug(k,k+1:n)*x(k+1:n)/Aug(k,k);
+     x(k) = Ab(k,n+1)- Ab(k,k+1:n)*x(k+1:n)/Ab(k,k);
  end
- U = Aug(:,1:n);
+ U = Ab(:,1:n);
 end
