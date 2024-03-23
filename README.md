@@ -23,6 +23,7 @@ Numerical Methods implementation via MATLAB.
 - Forward substitution
 - Cholesky method
 - Crout method
+- Doolittle method 
 - Gauss Elimination
 - Gauss-Jorden method 
 - Gauss-Seidel iteration method
