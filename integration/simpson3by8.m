@@ -10,9 +10,9 @@ Output:
     I = result of integration
 %} 
 
- if nargin < 4, error('insufficient inputs'); end
- if a > b, error('b must be greater than a'); end
- if mod(n,3) == 1, error('n must be multiple of 3'); end
+ if nargin < 4, error('insufficient inputs'), end
+ if a > b, error('b must be greater than a'), end
+ if mod(n,3) == 1, error('n must be multiple of 3'), end
 
  x = zeros(1,n-1); y = zeros(1,n-1);
  sum_3 = 0; sum_other = 0;

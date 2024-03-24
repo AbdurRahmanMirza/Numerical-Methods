@@ -12,7 +12,7 @@ Output:
 %}
 
  n = length(x);
- if length(y) ~= n, error("x and y must be of same length"); end
+ if length(y) ~= n, error("x and y must be of same length"), end
  L = zeros(n, n);
  for i = 1:n
      V = 1;

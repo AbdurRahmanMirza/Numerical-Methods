@@ -10,7 +10,7 @@ Output:
 %}
 
  m = length(x);
- if length(y) ~= m; error('x and y should be of same length'); end
+ if length(y) ~= m; error('x and y should be of same length'), end
  
  B = zeros(1:n+1);
  F = zeros(m,n+1);

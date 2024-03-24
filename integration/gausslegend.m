@@ -9,6 +9,7 @@ Inputs:
 Outputs:
     I = integral estimate 
 %} 
+
  if g == 2
      w = [1,1];
      x = [-1/sqrt(3),1/sqrt(3)];

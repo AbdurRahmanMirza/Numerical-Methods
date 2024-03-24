@@ -1,8 +1,13 @@
 function [L,U,y,x] = crout(A,b)
 %{
 Crout's Method (LU-decomposition)
+
+    [a11 a12 a13]   [l11  0   0 ] [ 1  u12 u13]
+	[a21 a22 a23] = [l21 l22  0 ] [ 0   1  u23]
+	[a31 a32 a33]   [l31 l32 l33] [ 0   0   1 ]
+
 Inputs:
-    A = n-by-n coefficient matrix (Positive Definite)
+    A = n-by-n coefficient matrix
     b = n-by-1 source matrix
 Outputs:
     L = n-by-n lower triangular matrix    

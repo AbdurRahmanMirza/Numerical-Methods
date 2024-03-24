@@ -12,17 +12,22 @@ Outputs:
  n = length(b);
  x = zeros(n,1);
  Ab = [A,b];
-
- for j = 1:n+1
-     for i = j+1:n
-         m = Ab(i,j)/Ab(j,j);
-         Ab(i,:) = Ab(i,:) - m*Ab(j,:);
-     end
- end
+ d = det(A);
  
- x(n) = Ab(n,n+1)/Ab(n,n);
- for k = n-1:-1:1
-     x(k) = Ab(k,n+1)- Ab(k,k+1:n)*x(k+1:n)/Ab(k,k);
+ if d ~= 0
+     for j = 1:n+1
+         for i = j+1:n
+             m = Ab(i,j)/Ab(j,j);
+			 Ab(i,:) = Ab(i,:) - m*Ab(j,:);
+         end
+     end
+ 
+	 x(n) = Ab(n,n+1)/Ab(n,n);
+     for k = n-1:-1:1
+         x(k) = Ab(k,n+1)- Ab(k,k+1:n)*x(k+1:n)/Ab(k,k);
+     end
+     U = Ab(:,1:n);
+ else
+	error("A is singular matrix")
  end
- U = Ab(:,1:n);
 end

@@ -1,6 +1,11 @@
 function [L,U,y,x] = doolittle(A,b)
 %{
 Doolittle's Method (LU-decomposition)
+
+    [a11 a12 a13]   [ 1   0   0 ] [u11 u12 u13]
+	[a21 a22 a23] = [l21  1   0 ] [ 0  u22 u23]
+	[a31 a32 a33]   [l31 l23  1 ] [ 0   0  u33]
+
 Inputs:
     A = n-by-n coefficient matrix
     b = n-by-1 source matrix

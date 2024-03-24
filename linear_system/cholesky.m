@@ -1,14 +1,20 @@
 function [L,U,y,x] = cholesky(A,b)
 %{
 Cholesky's Method (LU-decomposition)
+
+    [a11 a12 a13]   [l11  0   0 ] [l11 l21 l31]
+	[a21 a22 a23] = [l21 l22  0 ] [ 0  l22 l32]
+	[a31 a32 a33]   [l31 l32 l33] [ 0   0  l33]
+	
 Inputs:
     A = n-by-n coefficient matrix (Positive Definite)
     b = n-by-1 source matrix
 Outputs:
     L = n-by-n lower triangular matrix    
-    U = n-by-n upper triangular matrix  
+    U = n-by-n upper triangular matrix (transpose of L) 
     y = n-by-1 martix, soltion of Ly = b
     x = n-by-1 matrix, solution of Ux = y
+	
 %}
 
  n = length(b);
