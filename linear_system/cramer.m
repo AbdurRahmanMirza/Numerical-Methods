@@ -18,6 +18,6 @@ Output:
          A = Aold;
      end
  else
-     error("Cramer's rule can't be applied.")
+     error("Cramer's rule can't be applied.");
  end
 end
