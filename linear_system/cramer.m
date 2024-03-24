@@ -18,6 +18,10 @@ Output:
          A = Aold;
      end
  else
+<<<<<<< HEAD
      error("'A' is singular matrix. So, Cramer's rule can't be applied.")
+=======
+     error("Cramer's rule can't be applied.");
+>>>>>>> 88a19df33ac2c3d849faa37d49a5d171caf97989
  end
 end
