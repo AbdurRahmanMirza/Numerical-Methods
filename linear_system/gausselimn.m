@@ -14,20 +14,17 @@ Outputs:
  Ab = [A,b];
  d = det(A);
  
- if d ~= 0
-     for j = 1:n+1
-         for i = j+1:n
-             m = Ab(i,j)/Ab(j,j);
-			 Ab(i,:) = Ab(i,:) - m*Ab(j,:);
-         end
+ if d == 0, error('A is a singular matrix'), end
+ for j = 1:n-1
+     for i = j+1:n
+         m = Ab(i,j)/Ab(j,j);
+		 Ab(i,:) = Ab(i,:) - m*Ab(j,:)
      end
- 
-	 x(n) = Ab(n,n+1)/Ab(n,n);
-     for k = n-1:-1:1
-         x(k) = Ab(k,n+1)- Ab(k,k+1:n)*x(k+1:n)/Ab(k,k);
-     end
-     U = Ab(:,1:n);
- else
-	error("A is singular matrix")
  end
+ 
+ x(n) = Ab(n,n+1)/Ab(n,n);
+ for k = n-1:-1:1
+     x(k) = Ab(k,n+1)- Ab(k,k+1:n)*x(k+1:n)/Ab(k,k);
+ end
+ U = Ab(:,1:n);
 end
