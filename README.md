@@ -6,13 +6,14 @@ Numerical Methods implementation via MATLAB.
 - Linear Regression Curve Fitting
 - Least Square Polynomials 
 
-### Numerical integration
+### Numerical Integration
 - Composite Boole method
 - Composite Simpson 1/3 method
 - Composite Simpson 3/8 method
-- Unequally Spaced Trapezoidal Rule Quadrature
 - Composite Trapezoidal method
 - Composite Weddle rule
+- Unequally Spaced Trapezoidal Rule Quadrature
+- Gauss-Legendre Integration/Quadrature
 
 ### Interpolation
 - Lagrange method
