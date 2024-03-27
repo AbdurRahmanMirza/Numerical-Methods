@@ -3,6 +3,7 @@ clear all
 format short
 
 addpath linear_system
+addpath linear_system\linear_system_iteration
 
 A = [6 15 55; 15 55 225; 55 225 979];
 b = [76;295;1259];
@@ -15,7 +16,6 @@ b = [6 25 -11 15]';
 
 disp("Crout's Method")
 [l,u,y,x] = crout(A,b)
-
 
 disp("Doolittle's Method")
 [l,u,y,x] = doolittle(A,b)
