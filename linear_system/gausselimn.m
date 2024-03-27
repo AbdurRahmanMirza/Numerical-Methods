@@ -24,7 +24,7 @@ Outputs:
  
  x(n) = Ab(n,n+1)/Ab(n,n);
  for k = n-1:-1:1
-     x(k) = Ab(k,n+1)- Ab(k,k+1:n)*x(k+1:n)/Ab(k,k);
+     x(k) = (Ab(k,n+1)- Ab(k,k+1:n)*x(k+1:n))/Ab(k,k);
  end
  U = Ab(:,1:n);
 end
